@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bbae26e-33f2-48c0-a051-ea81633b39fb" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="17 (2)" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17 (2)" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3BwjAJorr06UcdLUxnzlPTkMtlE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AIApplication.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17 (2)",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/workspace/spring-ai-alibaba-examples",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "445ac6f826f7ac6bb8167c1ff3bceb9f",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\spring-ai\spring-ai-4\src\main\resources" />
+      <recent name="D:\workspace\spring-ai\spring-ai-4\src\main\java\a" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\resources" />
+      <recent name="D:\workspace\spring-ai\spring-ai-4\src\main\java" />
+      <recent name="D:\workspace\spring-ai\spring-ai-3\src\main\resources\multimodel\frame" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\spring-ai" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\resources\static" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="a" />
+      <recent name="helper" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="AIApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AIApplication">
+    <configuration name="a.MultimodalController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a.MultimodalController" />
+      <module name="spring-ai-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="AI_CHAT_Model" value="qwen-plus" />
+        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
+        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+        <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+      </envs>
+      <module name="spring-ai-1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="a.AIApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AIApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="AI_CHAT_Model" value="qwen-plus" />
+        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
+        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+        <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+      </envs>
+      <module name="spring-ai-4" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="a.AIApplication2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashScopeMultiModelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="AI_CHAT_Model" value="qwen-plus" />
+        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
+        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+        <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+      </envs>
+      <module name="spring-ai-3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="helper.controller.DashScopeMultiModelApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="AI_CHAT_Model" value="qwen-plus" />
+        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
+        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+        <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
+      </envs>
+      <module name="spring-ai-1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="a.Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.a.MultimodalController" />
+      <item itemvalue="Spring Boot.AIApplication2" />
+      <item itemvalue="Spring Boot.Test" />
+      <item itemvalue="Spring Boot.DashScopeMultiModelApplication" />
+      <item itemvalue="Spring Boot.AIApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AIApplication" />
+        <item itemvalue="Spring Boot.AIApplication2" />
+        <item itemvalue="Application.a.MultimodalController" />
+        <item itemvalue="Spring Boot.DashScopeMultiModelApplication" />
+        <item itemvalue="Spring Boot.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringConfigurationTabSettings">
+    <option name="sortAlpha" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bbae26e-33f2-48c0-a051-ea81633b39fb" name="Changes" comment="" />
+      <created>1775406884041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775406884041</updated>
+      <workItem from="1775406885521" duration="66208000" />
+      <workItem from="1775498797233" duration="10090000" />
+      <workItem from="1775523866354" duration="18170000" />
+      <workItem from="1775543031618" duration="23754000" />
+      <workItem from="1775568447155" duration="9058000" />
+      <workItem from="1775615108030" duration="79000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-2/src/main/java/a2/C.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/ai/spring-ai-spring-boot-autoconfigure/1.0.0-M6/spring-ai-spring-boot-autoconfigure-1.0.0-M6.jar!/org/springframework/ai/autoconfigure/ollama/OllamaAutoConfiguration.class</url>
+          <line>67</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-2/src/main/java/a2/AIApplication2.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/AIModelConfig.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample3.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/ai/spring-ai-model/1.1.4/spring-ai-model-1.1.4.jar!/org/springframework/ai/chat/model/ChatModel.class</url>
+          <line>18</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.ai.ollama.api.OllamaOptions" memberName="penalizeNewline" />
+        <PinnedItemInfo parentTag="org.springframework.ai.ollama.api.OllamaOptions" memberName="model" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

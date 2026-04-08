@@ -1,0 +1,4 @@
+helper\controller\MultiModelController.class
+helper\controller\DashScopeMultiModelApplication.class
+helper\controller\A.class
+helper\controller\FrameExtraHelper.class

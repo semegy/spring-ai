@@ -1,0 +1,17 @@
+#spring:
+#  ai:
+#    model:
+#      chat: ollama
+#    ollama:
+#      base-url: localhost:12434
+#    chat:
+#      options:
+#        model: qwen2:0.5b
+server:
+  port: 8080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      #      ?????????
+      charset: UTF-8
