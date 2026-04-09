@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package a;
+package ai;
 
 import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatOptions;
 import com.alibaba.cloud.ai.dashscope.chat.MessageFormat;

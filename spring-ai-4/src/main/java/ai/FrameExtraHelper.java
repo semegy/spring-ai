@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package a;
+package ai;
 
 import jakarta.annotation.PreDestroy;
 import org.bytedeco.javacv.FFmpegFrameGrabber;
