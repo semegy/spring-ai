@@ -37,7 +37,7 @@ public class ChatController {
 
     @GetMapping("/chat")
     public String chat(@RequestParam("message") String message) {
-        return callModel(message, "qianwen");
+        return callModel(message, "qianwen3");
     }
 
     @GetMapping("/localQianwen")

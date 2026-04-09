@@ -27,7 +27,7 @@ public class AgentExample2 {
                 // 若没有配置环境变量，请用阿里云百炼API Key将下行替换为：.apiKey("sk-xxx")
                 .apiKey("sk-50da44c4f24a468182538b8fdc173a5d")
                 // 模型列表：https://help.aliyun.com/model-studio/getting-started/models
-                .model("qwen3-vl-flash")
+                .model("qwen-plus")
                 .messages(Arrays.asList(systemMsg, userMsg))
                 .resultFormat(GenerationParam.ResultFormat.MESSAGE)
                 .build();

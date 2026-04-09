@@ -92,10 +92,9 @@ public class AIModelConfig {
                         .builder()
                         .apiKey(System.getenv("AI_DASHSCOPE_API_KEY"))
                         // 默认使用新加坡地域的模型，若使用新加坡地域的模型，可更改路径
-                        .baseUrl("https://dashscope-intl.aliyuncs.com")
                         .build())
                 .defaultOptions(DashScopeChatOptions.builder()
-                        .model("qwen3-max")
+                        .model("qwen-plus")
                         .build())
                 .build();
     }
@@ -165,7 +164,7 @@ public class AIModelConfig {
     }
 
     @Bean("chatClient")
-    public ChatClient chatClient(@Qualifier("qianwen") ChatModel chatModel) {
+    public ChatClient chatClient(@Qualifier("qianwen3") ChatModel chatModel) {
         ChatClient chatClient = ChatClient.create(chatModel);
         return chatClient;
     }

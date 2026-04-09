@@ -4,11 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bbae26e-33f2-48c0-a051-ea81633b39fb" name="Changes" comment="" />
+    <list default="true" id="0bbae26e-33f2-48c0-a051-ea81633b39fb" name="Changes" comment="调整数据">
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/WebSearchExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/ToolsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/DateTimeTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/ModelTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/WebSearchTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/utils/ModelConstaint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample2.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/AIModelConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/AIModelConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/utils/ModelConstains.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/AgentExample2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/target/classes/AgentExample2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig$LangchainChatModel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig$LangchainChatModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig$ModelMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ChatController$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ChatController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ChatController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/EmbeddingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ModelConstains.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/MultimodalController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/AIApplication2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/AIModelConfig$ModelMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/AIModelConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/DashScopeMultiModelApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/FrameExtraHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/MultiModelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/multimodel/dog_and_girl.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/multimodel/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/spring-ai-3-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/AIApplication2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/Cont.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/FrameExtraHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/MultiModelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/multimodel/dog_and_girl.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/multimodel/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/spring-ai-4-1.0-SNAPSHOT.jar" beforeDir="false" />
+    </list>
+    <list id="2796621c-b43d-4c76-a7ff-721c1bc05c65" name="ootherChanges" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -20,105 +84,95 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="17 (2)" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="17 (2)" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4,
-  &quot;fromUser&quot;: false
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/semegy/spring-ai.git&quot;,
+    &quot;accountId&quot;: &quot;d4bf148f-3346-489f-98f4-c7b5eec53e7d&quot;
+  }
 }</component>
-  <component name="ProjectId" id="3BwjAJorr06UcdLUxnzlPTkMtlE" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="7" start2="6" end2="66" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="11" end1="11" start2="70" end2="75" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="22" end1="38" start2="86" end2="91" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="39" end1="43" start2="92" end2="126" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="46" end1="47" start2="129" end2="134" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="51" end1="54" start2="138" end2="138" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="55" end1="57" start2="139" end2="139" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="58" end1="69" start2="140" end2="143" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="75" end1="82" start2="149" end2="149" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="83" end1="85" start2="150" end2="151" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="86" end1="91" start2="152" end2="152" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="93" end1="114" start2="154" end2="154" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="115" end1="117" start2="155" end2="157" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="118" end1="124" start2="158" end2="158" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="128" end1="136" start2="162" end2="164" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="137" end1="144" start2="165" end2="165" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="148" end1="158" start2="169" end2="172" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="160" end1="161" start2="174" end2="175" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="168" end1="170" start2="182" end2="183" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="171" end1="188" start2="184" end2="184" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="191" end1="192" start2="187" end2="188" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="194" end1="195" start2="190" end2="191" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="203" end1="207" start2="199" end2="202" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="212" end1="216" start2="207" end2="210" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="218" end1="222" start2="212" end2="212" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="237" end1="237" start2="227" end2="244" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="242" end1="242" start2="249" end2="254" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="246" end1="294" start2="258" end2="261" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
+        <range start1="304" end1="311" start2="271" end2="274" changelist="2796621c-b43d-4c76-a7ff-721c1bc05c65" />
+      </ranges>
+    </file>
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Application.AgentExample2.executor": "Debug",
+    "Application.AgentExample3.executor": "Run",
+    "Application.WebSearchExample.executor": "Debug",
+    "Maven.spring-ai [clean].executor": "Run",
+    "Maven.spring-ai [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.AIApplication.executor": "Debug",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17 (2)",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/workspace/spring-ai-alibaba-examples",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "445ac6f826f7ac6bb8167c1ff3bceb9f",
-    "vue.rearranger.settings.migration": "true"
+    "last_opened_file_path": "D:/workspace/examples",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\spring-ai\spring-ai-4\src\main\resources" />
-      <recent name="D:\workspace\spring-ai\spring-ai-4\src\main\java\a" />
-      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\resources" />
-      <recent name="D:\workspace\spring-ai\spring-ai-4\src\main\java" />
-      <recent name="D:\workspace\spring-ai\spring-ai-3\src\main\resources\multimodel\frame" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\spring-ai" />
-      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\resources\static" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\java" />
       <recent name="D:\workspace\spring-ai\spring-ai-1" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="a" />
-      <recent name="helper" />
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="KtorApplicationConfigurationType" />
-        <option value="MicronautRunConfigurationType" />
-        <option value="QuarkusRunConfigurationType" />
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-    <option name="configurationStatuses">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <map>
-              <entry key="AIApplication" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AIApplication">
-    <configuration name="a.MultimodalController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a.MultimodalController" />
+    <configuration name="AgentExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AgentExample2" />
+      <module name="spring-ai-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgentExample3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AgentExample3" />
+      <module name="spring-ai-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSearchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ai.WebSearchExample" />
       <module name="spring-ai-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a.*" />
+          <option name="PATTERN" value="ai.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,72 +181,14 @@
       </method>
     </configuration>
     <configuration name="AIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
       <envs>
-        <env name="AI_CHAT_Model" value="qwen-plus" />
-        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
-        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
         <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
       </envs>
       <module name="spring-ai-1" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="a.AIApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ai.AIApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AIApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <envs>
-        <env name="AI_CHAT_Model" value="qwen-plus" />
-        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
-        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
-        <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
-      </envs>
-      <module name="spring-ai-4" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="a.AIApplication2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DashScopeMultiModelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <envs>
-        <env name="AI_CHAT_Model" value="qwen-plus" />
-        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
-        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
-        <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
-      </envs>
-      <module name="spring-ai-3" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="helper.controller.DashScopeMultiModelApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <envs>
-        <env name="AI_CHAT_Model" value="qwen-plus" />
-        <env name="AI_DASHSCOPE_API_COMPLETIONSPATH" value="api/v1/services/aigc/multimodal-generation/generation" />
-        <env name="DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
-        <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
-      </envs>
-      <module name="spring-ai-1" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="a.Test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a.*" />
+          <option name="PATTERN" value="ai.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,25 +197,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.a.MultimodalController" />
-      <item itemvalue="Spring Boot.AIApplication2" />
-      <item itemvalue="Spring Boot.Test" />
-      <item itemvalue="Spring Boot.DashScopeMultiModelApplication" />
+      <item itemvalue="Application.AgentExample2" />
+      <item itemvalue="Application.AgentExample3" />
+      <item itemvalue="Application.WebSearchExample" />
       <item itemvalue="Spring Boot.AIApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AIApplication" />
-        <item itemvalue="Spring Boot.AIApplication2" />
-        <item itemvalue="Application.a.MultimodalController" />
-        <item itemvalue="Spring Boot.DashScopeMultiModelApplication" />
-        <item itemvalue="Spring Boot.Test" />
+        <item itemvalue="Application.AgentExample2" />
+        <item itemvalue="Application.AgentExample3" />
+        <item itemvalue="Application.WebSearchExample" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SpringConfigurationTabSettings">
-    <option name="sortAlpha" value="true" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -235,63 +225,40 @@
       <workItem from="1775568447155" duration="9058000" />
       <workItem from="1775615108030" duration="79000" />
     </task>
+    <task id="LOCAL-00001" summary="调整数据">
+      <option name="closed" value="true" />
+      <created>1775695373970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775695373970</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ootherChanges">
+      <option name="closed" value="true" />
+      <created>1775699083960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775699083960</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ootherChanges" />
+    <MESSAGE value="调整数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整数据" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-2/src/main/java/a2/C.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/ai/spring-ai-spring-boot-autoconfigure/1.0.0-M6/spring-ai-spring-boot-autoconfigure-1.0.0-M6.jar!/org/springframework/ai/autoconfigure/ollama/OllamaAutoConfiguration.class</url>
-          <line>67</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-2/src/main/java/a2/AIApplication2.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/AIModelConfig.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample3.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/a/ChatController.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/ai/spring-ai-model/1.1.4/spring-ai-model-1.1.4.jar!/org/springframework/ai/chat/model/ChatModel.class</url>
-          <line>18</line>
-          <option name="timeStamp" value="119" />
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample2.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="151" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
