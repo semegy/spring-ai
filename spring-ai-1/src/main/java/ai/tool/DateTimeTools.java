@@ -17,7 +17,7 @@ public class DateTimeTools implements ModelTool {
 
 
     @Tool(description = "用于在特定时间设置闹钟, 采用 ISO-8601 格式")
-    void setAlarm(@ToolParam(description = "ISO-8601 格式时间") String alarmTime ) {
+    void setAlarm(@ToolParam(description = "ISO-8601 格式时间") String alarmTime) {
         System.out.println("Alarm set for " + alarmTime);
     }
 }

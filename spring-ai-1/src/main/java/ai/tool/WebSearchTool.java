@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class WebSearchTool implements ModelTool{
+public class WebSearchTool implements ModelTool {
 
     private final OkHttpClient httpClient;
     private final ObjectMapper objectMapper;
@@ -39,7 +39,7 @@ public class WebSearchTool implements ModelTool{
         try {
             String htmlContent = fetchPage(searchUrl);
             Document doc = Jsoup.parse(htmlContent);
-            
+
             switch (engine) {
                 case BAIDU:
                     results = parseBaiduResults(doc);
@@ -65,9 +65,9 @@ public class WebSearchTool implements ModelTool{
     public String fetchWebPageContent(String url) throws IOException {
         String html = fetchPage(url);
         Document doc = Jsoup.parse(html);
-        
+
         doc.select("script, style, nav, footer, header, noscript").remove();
-        
+
         Element body = doc.body();
         if (body != null) {
             return body.text();
@@ -78,15 +78,15 @@ public class WebSearchTool implements ModelTool{
     public WebPageInfo extractWebPageInfo(String url) throws IOException {
         String html = fetchPage(url);
         Document doc = Jsoup.parse(html, url);
-        
+
         String title = doc.title();
-        
+
         String description = "";
         Element metaDesc = doc.selectFirst("meta[name=description]");
         if (metaDesc != null) {
             description = metaDesc.attr("content");
         }
-        
+
         if (description.isEmpty()) {
             Element body = doc.body();
             if (body != null) {
@@ -96,7 +96,7 @@ public class WebSearchTool implements ModelTool{
                 }
             }
         }
-        
+
         List<String> links = new ArrayList<>();
         Elements elements = doc.select("a[href]");
         for (Element link : elements) {
@@ -105,7 +105,7 @@ public class WebSearchTool implements ModelTool{
                 links.add(href);
             }
         }
-        
+
         return new WebPageInfo(url, title, description, links);
     }
 
@@ -148,79 +148,79 @@ public class WebSearchTool implements ModelTool{
     private List<SearchResultItem> parseBaiduResults(Document doc) {
         List<SearchResultItem> results = new ArrayList<>();
         Elements elements = doc.select(".result, .c-container");
-        
+
         for (Element element : elements) {
             Element titleElem = element.selectFirst("h3, .t");
             Element linkElem = element.selectFirst("a");
             Element descElem = element.selectFirst(".c-abstract, .abstract");
-            
+
             if (titleElem != null && linkElem != null) {
                 String title = titleElem.text();
                 String url = linkElem.absUrl("href");
                 String description = descElem != null ? descElem.text() : "";
-                
+
                 results.add(new SearchResultItem(title, url, description));
             }
         }
-        
+
         return results;
     }
 
     private List<SearchResultItem> parseBingResults(Document doc) {
         List<SearchResultItem> results = new ArrayList<>();
         Elements elements = doc.select(".b_algo");
-        
+
         for (Element element : elements) {
             Element titleElem = element.selectFirst("h2 a");
             Element descElem = element.selectFirst(".b_caption p, .b_snippet");
-            
+
             if (titleElem != null) {
                 String title = titleElem.text();
                 String url = titleElem.absUrl("href");
                 String description = descElem != null ? descElem.text() : "";
-                
+
                 results.add(new SearchResultItem(title, url, description));
             }
         }
-        
+
         return results;
     }
 
     private List<SearchResultItem> parseGenericResults(Document doc) {
         List<SearchResultItem> results = new ArrayList<>();
         Elements elements = doc.select("div.g, div.search-result, .result");
-        
+
         for (Element element : elements) {
             Element titleElem = element.selectFirst("h3, h2, .title");
             Element linkElem = element.selectFirst("a");
             Element descElem = element.selectFirst(".st, .snippet, .description");
-            
+
             if (titleElem != null && linkElem != null) {
                 String title = titleElem.text();
                 String url = linkElem.absUrl("href");
                 String description = descElem != null ? descElem.text() : "";
-                
+
                 results.add(new SearchResultItem(title, url, description));
             }
         }
-        
+
         if (results.isEmpty()) {
             Elements allLinks = doc.select("a[href]");
             int count = 0;
             for (Element link : allLinks) {
                 if (count >= 10) break;
-                
+
                 String href = link.absUrl("href");
                 String text = link.text();
-                
-                if (!href.isEmpty() && !text.isEmpty() && 
-                    (href.startsWith("http://") || href.startsWith("https://"))) {
+
+                if (!href.isEmpty() && !text.isEmpty() &&
+                        (href.startsWith("http://") || href.startsWith("https://"))) {
                     results.add(new SearchResultItem(text, href, ""));
                     count++;
                 }
             }
         }
-        
+
         return results;
     }
 
@@ -239,25 +239,40 @@ public class WebSearchTool implements ModelTool{
             this.items = items;
         }
 
-        public String getQuery() { return query; }
-        public void setQuery(String query) { this.query = query; }
-        
-        public String getEngine() { return engine; }
-        public void setEngine(String engine) { this.engine = engine; }
-        
-        public List<SearchResultItem> getItems() { return items; }
-        public void setItems(List<SearchResultItem> items) { this.items = items; }
+        public String getQuery() {
+            return query;
+        }
+
+        public void setQuery(String query) {
+            this.query = query;
+        }
+
+        public String getEngine() {
+            return engine;
+        }
+
+        public void setEngine(String engine) {
+            this.engine = engine;
+        }
+
+        public List<SearchResultItem> getItems() {
+            return items;
+        }
+
+        public void setItems(List<SearchResultItem> items) {
+            this.items = items;
+        }
 
         @Override
         public String toString() {
             StringBuilder sb = new StringBuilder();
             sb.append("搜索结果 [引擎: ").append(engine).append(", 查询: ").append(query).append("]\n");
             sb.append("找到 ").append(items.size()).append(" 条结果:\n\n");
-            
+
             for (int i = 0; i < items.size(); i++) {
                 sb.append(i + 1).append(". ").append(items.get(i).toString()).append("\n\n");
             }
-            
+
             return sb.toString();
         }
     }
@@ -273,14 +288,29 @@ public class WebSearchTool implements ModelTool{
             this.description = description;
         }
 
-        public String getTitle() { return title; }
-        public void setTitle(String title) { this.title = title; }
-        
-        public String getUrl() { return url; }
-        public void setUrl(String url) { this.url = url; }
-        
-        public String getDescription() { return description; }
-        public void setDescription(String description) { this.description = description; }
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
 
         @Override
         public String toString() {
@@ -301,17 +331,37 @@ public class WebSearchTool implements ModelTool{
             this.links = links;
         }
 
-        public String getUrl() { return url; }
-        public void setUrl(String url) { this.url = url; }
-        
-        public String getTitle() { return title; }
-        public void setTitle(String title) { this.title = title; }
-        
-        public String getDescription() { return description; }
-        public void setDescription(String description) { this.description = description; }
-        
-        public List<String> getLinks() { return links; }
-        public void setLinks(List<String> links) { this.links = links; }
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public List<String> getLinks() {
+            return links;
+        }
+
+        public void setLinks(List<String> links) {
+            this.links = links;
+        }
 
         @Override
         public String toString() {

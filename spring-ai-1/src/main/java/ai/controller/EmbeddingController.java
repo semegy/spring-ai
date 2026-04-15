@@ -25,6 +25,7 @@ public class EmbeddingController {
                 "垃圾正确使用可以变废为宝"
         );
     }
+
     @Autowired
     EmbeddingModel embeddingModel;
 

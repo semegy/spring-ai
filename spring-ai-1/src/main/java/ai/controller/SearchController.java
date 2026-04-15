@@ -22,19 +22,19 @@ public class SearchController {
             @RequestParam String query,
             @RequestParam(defaultValue = "BAIDU") String engine,
             @RequestParam(defaultValue = "10") int maxResults) {
-        
+
         Map<String, Object> response = new HashMap<>();
         try {
             WebSearchTool.SearchEngine searchEngine = WebSearchTool.SearchEngine.valueOf(engine.toUpperCase());
             WebSearchTool.SearchResult result = webSearchTool.search(query, searchEngine, maxResults);
-            
+
             response.put("success", true);
             response.put("data", result);
         } catch (Exception e) {
             response.put("success", false);
             response.put("error", e.getMessage());
         }
-        
+
         return response;
     }
 
@@ -43,7 +43,7 @@ public class SearchController {
         Map<String, Object> response = new HashMap<>();
         try {
             String content = webSearchTool.fetchWebPageContent(url);
-            
+
             response.put("success", true);
             response.put("url", url);
             response.put("content", content);
@@ -51,7 +51,7 @@ public class SearchController {
             response.put("success", false);
             response.put("error", e.getMessage());
         }
-        
+
         return response;
     }
 
@@ -60,14 +60,14 @@ public class SearchController {
         Map<String, Object> response = new HashMap<>();
         try {
             WebSearchTool.WebPageInfo info = webSearchTool.extractWebPageInfo(url);
-            
+
             response.put("success", true);
             response.put("data", info);
         } catch (Exception e) {
             response.put("success", false);
             response.put("error", e.getMessage());
         }
-        
+
         return response;
     }
 }

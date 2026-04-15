@@ -3,6 +3,7 @@ package ai.controller;
 import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatOptions;
 import com.alibaba.cloud.ai.dashscope.chat.MessageFormat;
 import com.alibaba.cloud.ai.dashscope.common.DashScopeApiConstants;
+import jakarta.annotation.PostConstruct;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.ai.chat.messages.UserMessage;
@@ -34,6 +35,12 @@ public class MultimodalController {
     @Autowired
     ChatClient chatClient;
 
+
+    @PostConstruct
+    public void init() {
+
+    }
+
     @GetMapping("/stream/test")
     public Flux<String> chatImage() {
 
@@ -41,14 +48,17 @@ public class MultimodalController {
         UserMessage message = UserMessage.builder().text("描述一下图片").media(media).metadata(new HashMap<>()).build();
         message.getMetadata().put(DashScopeApiConstants.MESSAGE_FORMAT, MessageFormat.IMAGE);
         return chatClient
-                .prompt(new Prompt(message, DashScopeChatOptions.builder().withMultiModel(true).build()))
+                .prompt(new Prompt(message, DashScopeChatOptions.builder()
+                        .withMultiModel(true)
+                        .model(DEFAULT_MODEL)
+                        .build()))
                 .stream()
                 .chatResponse().map(chatResponse -> chatResponse.getResult().getOutput().getText());
     }
 
 
     @GetMapping("/stream/chat")
-    public Flux<String> streamChat(@RequestParam("message") String message, @RequestParam(name = "imageFile")MultipartFile imageFile) {
+    public Flux<String> streamChat(@RequestParam("message") String message, @RequestParam(name = "imageFile") MultipartFile imageFile) {
         // 校验图片文件
         return chatClient
                 .prompt(
@@ -56,6 +66,20 @@ public class MultimodalController {
                                 .messages(UserMessage.builder().text(message).media(Media.builder().mimeType(MimeTypeUtils.ALL).data(
                                         imageFile.getResource()
                                 ).build()).build())
+                                .build())
+                .stream()
+                .chatResponse()
+                .map(ChatResponse::getResult)
+                .map(Generation::getOutput)
+                .map(AssistantMessage::getText);
+    }
+
+    @GetMapping("/text")
+    public Flux<String> chat(@RequestParam("message") String message) {
+        return chatClient
+                .prompt(
+                        Prompt.builder()
+                                .messages(UserMessage.builder().text(message).build())
                                 .chatOptions(DashScopeChatOptions.builder()
                                         .withMultiModel(true)
                                         .model(DEFAULT_MODEL)

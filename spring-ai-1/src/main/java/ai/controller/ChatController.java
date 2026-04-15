@@ -104,7 +104,7 @@ public class ChatController {
 
     private Flux<String> streamCallModel(String message, String qianwen) {
         if (qianwen == null) {
-            chatModelMap.get("qianwen").stream(message);
+            return chatModelMap.get("qianwen3").stream(message);
         }
         return chatModelMap.get(qianwen).stream(message);
     }

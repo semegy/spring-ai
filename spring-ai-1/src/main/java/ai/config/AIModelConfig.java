@@ -40,7 +40,7 @@ public class AIModelConfig {
 
     @Component("chatModelMap")
     public
-    class ModelMap extends HashMap<String, ChatModel> implements ApplicationContextAware{
+    class ModelMap extends HashMap<String, ChatModel> implements ApplicationContextAware {
         @Override
         public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
             put("qianwen", applicationContext.getBean("qianwen", ChatModel.class));
@@ -52,7 +52,7 @@ public class AIModelConfig {
 
     @Bean("localQianwen")
     public ChatModel localQianwen() {
-       return OllamaChatModel.builder()
+        return OllamaChatModel.builder()
                 .ollamaApi(new OllamaApi.Builder().baseUrl("http://localhost:11434").build())
                 .defaultOptions(OllamaChatOptions.builder().model("qwen2:0.5b").build())
                 .build();
@@ -61,15 +61,16 @@ public class AIModelConfig {
 
     @Bean("qianwen")
     public ChatModel qianwen() {
-            return DashScopeChatModel.builder()
-                    .dashScopeApi(DashScopeApi
-                            .builder()
-                            .apiKey("sk-50da44c4f24a468182538b8fdc173a5d")
-                            .build())
-                    .defaultOptions(DashScopeChatOptions.builder()
-                            .model("qwen3.6-plus")
-                            .build())
-                    .build();
+        return DashScopeChatModel.builder()
+                .dashScopeApi(DashScopeApi
+                        .builder()
+                        .apiKey("sk-50da44c4f24a468182538b8fdc173a5d")
+                        .build())
+                .defaultOptions(DashScopeChatOptions.builder()
+                        .model("qwen3.6-plus")
+                        .withMultiModel(true)
+                        .build())
+                .build();
     }
 
     @Bean("qwen3_6")
@@ -94,7 +95,7 @@ public class AIModelConfig {
                         // 默认使用新加坡地域的模型，若使用新加坡地域的模型，可更改路径
                         .build())
                 .defaultOptions(DashScopeChatOptions.builder()
-                        .model("qwen-plus")
+                        .model("qwen3")
                         .build())
                 .build();
     }
@@ -103,10 +104,10 @@ public class AIModelConfig {
     class LangchainChatModel implements ChatModel {
 
         @Resource(name = "streamChatModel")
-        private dev.langchain4j.model.chat.StreamingChatModel  streamLangchain4j;
+        private dev.langchain4j.model.chat.StreamingChatModel streamLangchain4j;
 
         @Resource(name = "langchain4j")
-        private dev.langchain4j.model.chat.ChatModel  langchain4j;
+        private dev.langchain4j.model.chat.ChatModel langchain4j;
 
         @Override
         public String call(String message) {
@@ -149,8 +150,8 @@ public class AIModelConfig {
     public dev.langchain4j.model.chat.ChatModel langchain4j() {
         return OpenAiChatModel.builder()
                 .apiKey(System.getenv("AI_DASHSCOPE_API_KEY"))
-                .baseUrl("https://dashscope.aliyuncs.com")
-                .modelName("qwen-vl-plus")
+                .baseUrl("https://dashscope.aliyuncs.com/compatible-mode/v1")
+                .modelName("qwen-plus")
                 .build();
     }
 

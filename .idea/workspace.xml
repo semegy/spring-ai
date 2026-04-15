@@ -5,64 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bbae26e-33f2-48c0-a051-ea81633b39fb" name="Changes" comment="调整数据">
-      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/WebSearchExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/ToolsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/DateTimeTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/ModelTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/WebSearchTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/utils/ModelConstaint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-streamable-webflux-client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-streamable-webflux-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-streamable-webflux-client/src/main/java/com/alibaba/cloud/ai/mcp/client/StreamableWebfluxClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-streamable-webflux-client/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/issue-clarify-graph-example.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/agent/AliBaiLianAgentMCPController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/agent/AliBaiLianAgentRagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/agent/BailianAgentRagStreamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/AIMemoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/BailianAutoconfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/DashScopeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/GraphConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/LocalMemoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/MysqlChatMemoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/MysqlMemoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/RedisMemoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/RedissonRedisChatMemoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/domain/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/graph/controller/GraphController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/graph/controller/KnowledgeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/knowledge/controller/CloudRagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/knowledge/service/CloudRagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/knowledge/service/RagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/mcp/OpenMeteoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/resources/data/spring_ai_alibaba_quickstart.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/main/resources/prompts/clarify_prompt.st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/chat/client/advisor/ClientSse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/chat/client/advisor/SampleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/spring/ai/alibaba/graph/GraphTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/spring/ai/alibaba/graph/ReviewGraphService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ai-2/src/main/java/ai/FrameExtraHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-ai-1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample2.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/chat/client/advisor/AgentExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample2.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/chat/client/advisor/AgentExample2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample3.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/chat/client/advisor/AgentExample3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/AIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/AIApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/WebSearchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/test/java/chat/client/advisor/WebSearchExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/AIModelConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/config/AIModelConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/utils/ModelConstains.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/AgentExample2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/target/classes/AgentExample2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig$LangchainChatModel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig$LangchainChatModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig$ModelMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/AIModelConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ChatController$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ChatController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ChatController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/EmbeddingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/ModelConstains.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-1/target/classes/a/MultimodalController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/AIApplication2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/AIModelConfig$ModelMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/AIModelConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-2/target/classes/a2/C.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/DashScopeMultiModelApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/FrameExtraHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/helper/controller/MultiModelController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/multimodel/dog_and_girl.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/classes/multimodel/video.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-3/target/spring-ai-3-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/AIApplication2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/Cont.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/FrameExtraHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/a/MultiModelController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/multimodel/dog_and_girl.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/classes/multimodel/video.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-4/target/spring-ai-4-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/EmbeddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/EmbeddingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/MultimodalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/MultimodalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/DateTimeTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/DateTimeTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/WebSearchTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/tool/WebSearchTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/java/ai/utils/ModelConstaint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/resources/1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-1/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/src/main/java/a2/AIApplication2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/src/main/java/a2/AIController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/src/main/java/a2/AIModelConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/src/main/java/a2/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-2/src/main/resources/aplication.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/src/main/java/helper/controller/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/src/main/java/helper/controller/DashScopeMultiModelApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-2/src/main/java/ai/DashScopeMultiModelApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/src/main/java/helper/controller/FrameExtraHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/src/main/java/helper/controller/MultiModelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/src/main/resources/multimodel/dog_and_girl.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-2/src/main/resources/multimodel/dog_and_girl.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-3/src/main/resources/multimodel/video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-2/src/main/resources/multimodel/video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/java/ai/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/java/ai/AIApplication2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/java/ai/Cont.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/java/ai/FrameExtraHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/java/ai/MultiModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-2/src/main/java/ai/MultiModelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ai-2/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/resources/multimodel/dog_and_girl.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ai-4/src/main/resources/multimodel/video.mp4" beforeDir="false" />
     </list>
     <list id="2796621c-b43d-4c76-a7ff-721c1bc05c65" name="ootherChanges" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +97,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -84,133 +105,183 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;semegy&quot;
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/semegy/spring-ai.git&quot;,
     &quot;accountId&quot;: &quot;d4bf148f-3346-489f-98f4-c7b5eec53e7d&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="66" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="11" end1="11" start2="70" end2="75" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="22" end1="38" start2="86" end2="91" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="39" end1="43" start2="92" end2="126" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="46" end1="47" start2="129" end2="134" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="51" end1="54" start2="138" end2="138" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="55" end1="57" start2="139" end2="139" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="58" end1="69" start2="140" end2="143" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="75" end1="82" start2="149" end2="149" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="83" end1="85" start2="150" end2="151" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="86" end1="91" start2="152" end2="152" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="93" end1="114" start2="154" end2="154" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="115" end1="117" start2="155" end2="157" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="118" end1="124" start2="158" end2="158" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="128" end1="136" start2="162" end2="164" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="137" end1="144" start2="165" end2="165" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="148" end1="158" start2="169" end2="172" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="160" end1="161" start2="174" end2="175" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="168" end1="170" start2="182" end2="183" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="171" end1="188" start2="184" end2="184" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="191" end1="192" start2="187" end2="188" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="194" end1="195" start2="190" end2="191" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="203" end1="207" start2="199" end2="202" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="212" end1="216" start2="207" end2="210" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="218" end1="222" start2="212" end2="212" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="237" end1="237" start2="227" end2="244" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="242" end1="242" start2="249" end2="254" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="246" end1="294" start2="258" end2="261" changelist="0bbae26e-33f2-48c0-a051-ea81633b39fb" />
-        <range start1="304" end1="311" start2="271" end2="274" changelist="2796621c-b43d-4c76-a7ff-721c1bc05c65" />
-      </ranges>
-    </file>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar!/io/micrometer/observation/ObservationRegistry.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.0.0/spring-ai-client-chat-1.0.0-sources.jar!/org/springframework/ai/chat/client/ChatClientRequest.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.0.0/spring-ai-client-chat-1.0.0-sources.jar!/org/springframework/ai/chat/client/advisor/DefaultAroundAdvisorChain.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.0.0/spring-ai-client-chat-1.0.0-sources.jar!/org/springframework/ai/chat/client/advisor/api/AdvisorChain.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.0.0/spring-ai-client-chat-1.0.0-sources.jar!/org/springframework/ai/chat/client/advisor/api/BaseAdvisorChain.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.0.0/spring-ai-client-chat-1.0.0-sources.jar!/org/springframework/ai/chat/client/advisor/api/CallAdvisorChain.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.0.0/spring-ai-client-chat-1.0.0-sources.jar!/org/springframework/ai/chat/client/advisor/api/StreamAdvisorChain.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.1.4/spring-ai-client-chat-1.1.4.jar!/org/springframework/ai/chat/client/DefaultChatClient.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-client-chat/1.1.4/spring-ai-client-chat-1.1.4.jar!/org/springframework/ai/chat/client/advisor/api/BaseAdvisorChain.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-model/1.0.0/spring-ai-model-1.0.0.jar!/org/springframework/ai/chat/model/ChatResponse.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../company/maven_repo/org/springframework/ai/spring-ai-model/1.0.0/spring-ai-model-1.0.0.jar!/org/springframework/ai/chat/prompt/Prompt.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../soft/jdk17/lib/src.zip!/java.base/java/nio/ByteBuffer.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3C78O7YArGJp3du46T561Musf5C" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AgentExample2.executor": "Debug",
     "Application.AgentExample3.executor": "Run",
+    "Application.ClientSse.executor": "Debug",
+    "Application.Fluxe.executor": "Debug",
+    "Application.GraphTest.executor": "Debug",
+    "Application.OpenMeteoService.executor": "Debug",
+    "Application.ReviewGraphService.executor": "Debug",
     "Application.WebSearchExample.executor": "Debug",
+    "HTTP Request.issue-clarify-graph-example | #10.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | #11.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | #12.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | #3.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | #7.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | #8.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | #9.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | -----------------------------------------.executor": "Run",
+    "HTTP Request.issue-clarify-graph-example | ========================================.executor": "Run",
     "Maven.spring-ai [clean].executor": "Run",
     "Maven.spring-ai [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
-    "Spring Boot.AIApplication.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AIApplication.executor": "Run",
+    "Spring Boot.IssueClarifyGraphApplication.executor": "Run",
+    "Spring Boot.StreamableWebfluxClientApplication.executor": "Debug",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/workspace/examples",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/workspace/spring-ai/spring-ai-1/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "通义灵码",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ai" />
+      <recent name="ai.graph" />
+      <recent name="ai.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\resources" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\resources\data" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\java\ai\graph" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\java\ai" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\spring-ai\spring-ai-4\src\main\java\ai" />
+      <recent name="D:\workspace\spring-ai\spring-ai-1\src\test\java\chat\client\advisor" />
       <recent name="D:\workspace\spring-ai\spring-ai-1\src\main\java" />
       <recent name="D:\workspace\spring-ai\spring-ai-1" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AIApplication">
-    <configuration name="AgentExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AgentExample2" />
-      <module name="spring-ai-1" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.issue-clarify-graph-example | -----------------------------------------">
+    <configuration name="issue-clarify-graph-example | -----------------------------------------" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/spring-ai-1/issue-clarify-graph-example.http" index="2" requestIdentifier="-----------------------------------------" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="issue-clarify-graph-example | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/spring-ai-1/issue-clarify-graph-example.http" index="11" requestIdentifier="#11" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="issue-clarify-graph-example | #12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/spring-ai-1/issue-clarify-graph-example.http" index="12" requestIdentifier="#12" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="issue-clarify-graph-example | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/spring-ai-1/issue-clarify-graph-example.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="issue-clarify-graph-example | ========================================" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/spring-ai-1/issue-clarify-graph-example.http" requestIdentifier="========================================" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="spring-ai-2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AgentExample3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AgentExample3" />
-      <module name="spring-ai-1" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="spring-ai-2" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebSearchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ai.WebSearchExample" />
-      <module name="spring-ai-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ai.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="IssueClarifyGraphApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="AI_DASHSCOPE_API_KEY" value="sk-50da44c4f24a468182538b8fdc173a5d" />
       </envs>
-      <module name="spring-ai-1" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ai.AIApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ai.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibaba.cloud.ai.IssueClarifyGraphApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AgentExample2" />
-      <item itemvalue="Application.AgentExample3" />
-      <item itemvalue="Application.WebSearchExample" />
-      <item itemvalue="Spring Boot.AIApplication" />
+      <item itemvalue="HTTP Request.issue-clarify-graph-example | #3" />
+      <item itemvalue="HTTP Request.issue-clarify-graph-example | -----------------------------------------" />
+      <item itemvalue="HTTP Request.issue-clarify-graph-example | ========================================" />
+      <item itemvalue="HTTP Request.issue-clarify-graph-example | #11" />
+      <item itemvalue="HTTP Request.issue-clarify-graph-example | #12" />
+      <item itemvalue="Spring Boot.IssueClarifyGraphApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AIApplication" />
-        <item itemvalue="Application.AgentExample2" />
-        <item itemvalue="Application.AgentExample3" />
-        <item itemvalue="Application.WebSearchExample" />
+        <item itemvalue="HTTP Request.issue-clarify-graph-example | ========================================" />
+        <item itemvalue="HTTP Request.issue-clarify-graph-example | -----------------------------------------" />
+        <item itemvalue="HTTP Request.issue-clarify-graph-example | #3" />
+        <item itemvalue="HTTP Request.issue-clarify-graph-example | #12" />
+        <item itemvalue="HTTP Request.issue-clarify-graph-example | #11" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0bbae26e-33f2-48c0-a051-ea81633b39fb" name="Changes" comment="" />
@@ -224,6 +295,23 @@
       <workItem from="1775543031618" duration="23754000" />
       <workItem from="1775568447155" duration="9058000" />
       <workItem from="1775615108030" duration="79000" />
+      <workItem from="1775725218068" duration="1997000" />
+      <workItem from="1775731970554" duration="10028000" />
+      <workItem from="1775746050033" duration="8745000" />
+      <workItem from="1775778639181" duration="3824000" />
+      <workItem from="1775783323363" duration="6581000" />
+      <workItem from="1775790331737" duration="2303000" />
+      <workItem from="1775792666591" duration="18717000" />
+      <workItem from="1775832618936" duration="932000" />
+      <workItem from="1775853415412" duration="1902000" />
+      <workItem from="1775868760730" duration="20512000" />
+      <workItem from="1775964460750" duration="38999000" />
+      <workItem from="1776051666406" duration="42531000" />
+      <workItem from="1776131195011" duration="6798000" />
+      <workItem from="1776146449376" duration="6836000" />
+      <workItem from="1776166624187" duration="1640000" />
+      <workItem from="1776206996280" duration="4986000" />
+      <workItem from="1776212001616" duration="14170000" />
     </task>
     <task id="LOCAL-00001" summary="调整数据">
       <option name="closed" value="true" />
@@ -241,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775699083960</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="调整数据">
+      <option name="closed" value="true" />
+      <created>1775716311348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775716311348</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,9 +352,52 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-ai-1/src/main/java/AgentExample2.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="151" />
+          <url>file://$PROJECT_DIR$/issue-clarify-graph-example/src/main/java/com/alibaba/cloud/ai/controller/GraphController.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/issue-clarify-graph-example/src/main/java/com/alibaba/cloud/ai/controller/GraphController.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/issue-clarify-graph-example/src/main/java/com/alibaba/cloud/ai/controller/GraphController.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/issue-clarify-graph-example/src/main/java/com/alibaba/cloud/ai/controller/GraphController.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/issue-clarify-graph-example/src/main/java/com/alibaba/cloud/ai/controller/GraphController.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/test/java/spring/ai/alibaba/graph/ReviewGraphService.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/test/java/spring/ai/alibaba/graph/ReviewGraphService.java</url>
+          <line>56</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../company/maven_repo/com/alibaba/cloud/ai/spring-ai-alibaba-dashscope/1.1.2.2/spring-ai-alibaba-dashscope-1.1.2.2.jar!/com/alibaba/cloud/ai/dashscope/api/DashScopeApi.class</url>
+          <line>270</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ai-1/src/test/java/spring/ai/alibaba/graph/ReviewGraphService.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -269,12 +408,8 @@
       </pinned-members>
     </pin-to-top-manager>
   </component>
-  <component name="github-copilot-workspace">
-    <instructionFileLocations>
-      <option value=".github/instructions" />
-    </instructionFileLocations>
-    <promptFileLocations>
-      <option value=".github/prompts" />
-    </promptFileLocations>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
