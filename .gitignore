@@ -3,7 +3,7 @@ target/
 ### IntelliJ IDEA ###
 .idea/*
 **/.idea/*
-.idea/modules.xml
+.idea/*
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
@@ -39,3 +39,8 @@ logs/
 **/.db/*
 
 
+/spring-ai-1/src/main/java/ai/graph/node/
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
