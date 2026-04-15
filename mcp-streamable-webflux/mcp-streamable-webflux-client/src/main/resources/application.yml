@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: mcp-webflux-client-example
+  main:
+    web-application-type: none
+  ai:
+    dashscope:
+      api-key: sk-50da44c4f24a468182538b8fdc173a5d
+      chat:
+        options:
+          multiModel: true
+          model: qwen3.6-plus
+    mcp:
+      client:
+        sse:
+          connections:
+            server1:
+              # 实际的连接地址为：http://localhost:8080/sse/mcp
+              url: http://localhost:8080/

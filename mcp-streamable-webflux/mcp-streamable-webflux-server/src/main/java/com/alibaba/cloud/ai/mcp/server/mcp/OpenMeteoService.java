@@ -1,4 +1,4 @@
-package ai.mcp;
+package com.alibaba.cloud.ai.mcp.server.mcp;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

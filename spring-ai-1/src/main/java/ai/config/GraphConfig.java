@@ -1,6 +1,7 @@
 package ai.config;
 
 import ai.domain.Result;
+import ai.graph.node.*;
 import com.alibaba.cloud.ai.dashscope.rag.DashScopeDocumentRetriever;
 import com.alibaba.cloud.ai.graph.GraphRepresentation;
 import com.alibaba.cloud.ai.graph.KeyStrategyFactory;
