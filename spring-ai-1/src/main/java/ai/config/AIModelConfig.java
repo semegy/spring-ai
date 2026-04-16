@@ -39,8 +39,7 @@ import java.util.function.Consumer;
 public class AIModelConfig {
 
     @Component("chatModelMap")
-    public
-    class ModelMap extends HashMap<String, ChatModel> implements ApplicationContextAware {
+    public class ModelMap extends HashMap<String, ChatModel> implements ApplicationContextAware {
         @Override
         public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
             put("qianwen", applicationContext.getBean("qianwen", ChatModel.class));
@@ -52,52 +51,25 @@ public class AIModelConfig {
 
     @Bean("localQianwen")
     public ChatModel localQianwen() {
-        return OllamaChatModel.builder()
-                .ollamaApi(new OllamaApi.Builder().baseUrl("http://localhost:11434").build())
-                .defaultOptions(OllamaChatOptions.builder().model("qwen2:0.5b").build())
-                .build();
+        return OllamaChatModel.builder().ollamaApi(new OllamaApi.Builder().baseUrl("http://localhost:11434").build()).defaultOptions(OllamaChatOptions.builder().model("qwen2:0.5b").build()).build();
     }
 
 
     @Bean("qianwen")
     public ChatModel qianwen() {
-        return DashScopeChatModel.builder()
-                .dashScopeApi(DashScopeApi
-                        .builder()
-                        .apiKey("sk-50da44c4f24a468182538b8fdc173a5d")
-                        .build())
-                .defaultOptions(DashScopeChatOptions.builder()
-                        .model("qwen3.6-plus")
-                        .withMultiModel(true)
-                        .build())
-                .build();
+        return DashScopeChatModel.builder().dashScopeApi(DashScopeApi.builder().apiKey("sk-50da44c4f24a468182538b8fdc173a5d").build()).defaultOptions(DashScopeChatOptions.builder().model("qwen3.5-plus").withMultiModel(true).build()).build();
     }
 
     @Bean("qwen3_6")
     public ImageModel qwen3_6() {
-        return DashScopeImageModel.builder()
-                .dashScopeApi(DashScopeImageApi
-                        .builder()
-                        .apiKey(System.getenv("AI_DASHSCOPE_API_KEY"))
-                        .build())
-                .defaultOptions(DashScopeImageOptions.builder()
-                        .model("qwen3.6-plus")
-                        .build())
-                .build();
+        return DashScopeImageModel.builder().dashScopeApi(DashScopeImageApi.builder().apiKey(System.getenv("AI_DASHSCOPE_API_KEY")).build()).defaultOptions(DashScopeImageOptions.builder().model("qwen3.5-plus").build()).build();
     }
 
     @Bean("qianwen3")
     public ChatModel qianwen3() {
-        return DashScopeChatModel.builder()
-                .dashScopeApi(DashScopeApi
-                        .builder()
-                        .apiKey(System.getenv("AI_DASHSCOPE_API_KEY"))
-                        // 默认使用新加坡地域的模型，若使用新加坡地域的模型，可更改路径
-                        .build())
-                .defaultOptions(DashScopeChatOptions.builder()
-                        .model("qwen3")
-                        .build())
-                .build();
+        return DashScopeChatModel.builder().dashScopeApi(DashScopeApi.builder().apiKey(System.getenv("AI_DASHSCOPE_API_KEY"))
+                // 默认使用新加坡地域的模型，若使用新加坡地域的模型，可更改路径
+                .build()).defaultOptions(DashScopeChatOptions.builder().model("qwen3").build()).build();
     }
 
     @Component
@@ -121,60 +93,47 @@ public class AIModelConfig {
 
         @Override
         public Flux<String> stream(String message) {
-            return Flux.create(
-                    (Consumer<FluxSink<String>>) fluxSink -> streamLangchain4j.chat(message, new StreamingChatResponseHandler() {
+            return Flux.create((Consumer<FluxSink<String>>) fluxSink -> streamLangchain4j.chat(message, new StreamingChatResponseHandler() {
 
-                        // 完成回调
-                        @Override
-                        public void onCompleteResponse(ChatResponse chatResponse) {
-                            fluxSink.complete();
-                        }
+                // 完成回调
+                @Override
+                public void onCompleteResponse(ChatResponse chatResponse) {
+                    fluxSink.complete();
+                }
 
-                        // 错误回调
-                        @Override
-                        public void onError(Throwable throwable) {
-                            fluxSink.error(throwable);
-                        }
+                // 错误回调
+                @Override
+                public void onError(Throwable throwable) {
+                    fluxSink.error(throwable);
+                }
 
-                        // 新数据回调
-                        @Override
-                        public void onPartialResponse(String partialResponse) {
-                            fluxSink.next(partialResponse);
-                        }
-                    })
-            );
+                // 新数据回调
+                @Override
+                public void onPartialResponse(String partialResponse) {
+                    fluxSink.next(partialResponse);
+                }
+            }));
         }
     }
 
     @Bean("langchain4j")
     public dev.langchain4j.model.chat.ChatModel langchain4j() {
-        return OpenAiChatModel.builder()
-                .apiKey(System.getenv("AI_DASHSCOPE_API_KEY"))
-                .baseUrl("https://dashscope.aliyuncs.com/compatible-mode/v1")
-                .modelName("qwen-plus")
-                .build();
+        return OpenAiChatModel.builder().apiKey(System.getenv("AI_DASHSCOPE_API_KEY")).baseUrl("https://dashscope.aliyuncs.com/compatible-mode/v1").modelName("qwen-plus").build();
     }
 
     @Bean("streamChatModel")
     public StreamingChatModel streamChatModel() {
-        return OpenAiStreamingChatModel.builder()
-                .apiKey(System.getenv("AI_DASHSCOPE_API_KEY"))
-                .modelName("qwen-vl-plus")
-                .baseUrl("https://dashscope.aliyuncs.com")
-                .build();
+        return OpenAiStreamingChatModel.builder().apiKey(System.getenv("AI_DASHSCOPE_API_KEY")).modelName("qwen-vl-plus").baseUrl("https://dashscope.aliyuncs.com").build();
     }
 
     @Bean("chatClient")
     public ChatClient chatClient(@Qualifier("qianwen3") ChatModel chatModel) {
-        ChatClient chatClient = ChatClient.create(chatModel);
+        ChatClient chatClient = ChatClient.builder(chatModel).defaultOptions(DashScopeChatOptions.builder().model("qwen3.5-plus").withMultiModel(true).build()).build();
         return chatClient;
     }
 
     @Bean("embeddingModel")
     public EmbeddingModel embeddingModel() {
-        return DashScopeEmbeddingModel.builder()
-                .dashScopeApi(DashScopeApi.builder().apiKey(System.getenv("AI_DASHSCOPE_API_KEY")).build())
-                .defaultOptions(DashScopeEmbeddingOptions.builder().model("text-embedding-v4").build())
-                .build();
+        return DashScopeEmbeddingModel.builder().dashScopeApi(DashScopeApi.builder().apiKey(System.getenv("AI_DASHSCOPE_API_KEY")).build()).defaultOptions(DashScopeEmbeddingOptions.builder().model("text-embedding-v4").build()).build();
     }
 }

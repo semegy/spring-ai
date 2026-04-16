@@ -6,6 +6,10 @@ server:
       force: true
       charset: UTF-8
 spring:
+  service:
+    data:
+      mock:
+        enabled: true
   application:
     name: spring-ai
   ai:
@@ -15,7 +19,7 @@ spring:
       api-key: ${AI_DASHSCOPE_API_KEY}
       chat:
         options:
-          model: qwen3.6-plus
+          model: qwen3.5-plus
       agent:
         app-id: 0f8e9da11e24477a93fe5d0e12218881
         mcp:

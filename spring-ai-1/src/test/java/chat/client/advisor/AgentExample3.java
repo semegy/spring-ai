@@ -32,7 +32,7 @@ public class AgentExample3 {
                 // 若没有配置环境变量，请用百炼API Key将下行替换为：.apiKey("sk-xxx")
                 // 各地域的API Key不同。获取API Key：https://help.aliyun.com/zh/model-studio/get-api-key
                 .apiKey("sk-50da44c4f24a468182538b8fdc173a5d")
-                .model("qwen3.6-plus")  // 此处以qwen3.6-plus为例，可按需更换模型名称。模型列表：https://help.aliyun.com/zh/model-studio/models
+                .model("qwen3.5-plus")  // 此处以qwen3.5-plus为例，可按需更换模型名称。模型列表：https://help.aliyun.com/zh/model-studio/models
                 .messages(Arrays.asList(userMessage))
                 .build();
         MultiModalConversationResult result = conv.call(param);

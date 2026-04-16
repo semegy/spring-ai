@@ -45,8 +45,7 @@ public class ReviewGraphService {
 
         // 添加执行逻辑节点
         stateGraph.addEdge(StateGraph.START, "ai_generator");
-        stateGraph.addEdge("ai_generator", "user_input1");
-        stateGraph.addEdge("user_input1", "human_reviewer");
+        stateGraph.addEdge("ai_generator", "human_reviewer");
         stateGraph.addConditionalEdges("human_reviewer", new AsyncEdgeAction() {
                     @Override
                     public CompletableFuture<String> apply(OverAllState state) {
@@ -61,6 +60,7 @@ public class ReviewGraphService {
                 },
                 Map.of("waiting", "user_input1", "success", "success", "reject", "reject")
         );
+        stateGraph.addEdge("user_input1", "human_reviewer");
         stateGraph.addEdge("reject", END);
         stateGraph.addEdge("success", END);
 

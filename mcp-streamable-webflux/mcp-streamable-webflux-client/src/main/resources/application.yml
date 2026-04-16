@@ -12,7 +12,7 @@ spring:
       chat:
         options:
           multiModel: true
-          model: qwen3.6-plus
+          model: qwen3.5-plus
     mcp:
       client:
         sse:

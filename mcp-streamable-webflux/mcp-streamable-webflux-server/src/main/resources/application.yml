@@ -10,7 +10,7 @@ spring:
       api-key: sk-50da44c4f24a468182538b8fdc173a5d
       chat:
         options:
-          model: qwen3.6-plus
+          model: qwen3.5-plus
       agent:
         app-id: 0f8e9da11e24477a93fe5d0e12218881
         mcp:

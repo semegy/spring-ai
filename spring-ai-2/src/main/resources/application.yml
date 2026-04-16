@@ -10,4 +10,4 @@ spring:
       api-key: ${AI_DASHSCOPE_API_KEY}
       chat:
         options:
-          model: qwen3.6-plus
+          model: qwen3.5-plus
