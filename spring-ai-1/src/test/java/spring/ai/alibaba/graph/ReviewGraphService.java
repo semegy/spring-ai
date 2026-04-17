@@ -159,7 +159,7 @@ public class ReviewGraphService {
         runnableConfig.context().put(RunnableConfig.STATE_UPDATE_METADATA_KEY, Boolean.TRUE);
         reviewGraphService.compiledGraph.updateState(runnableConfig, Map.of("user_input", "approve"), null);
 
-        reviewGraphService.compiledGraph.stream(Map.of("user_input", "approve"), runnableConfig.withResume())
+        reviewGraphService.compiledGraph.stream(null, runnableConfig.withResume())
                 .doOnNext(nodeOutput -> {
                     System.out.println("节点输出" + nodeOutput);
                 })

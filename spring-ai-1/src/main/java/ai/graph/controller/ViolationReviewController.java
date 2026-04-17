@@ -17,7 +17,7 @@ public class ViolationReviewController {
     @Autowired
     private ImageAuditWorkflow auditWorkflow;
 
-    @Value("classpath:椅子.jpg")
+    @Value("classpath:multimodel/椅子.jpg")
     Resource resource;
 
     @GetMapping("checkImage/{workFlowId}")
